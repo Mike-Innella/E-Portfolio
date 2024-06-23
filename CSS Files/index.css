@@ -92,7 +92,7 @@ p {
   size: 1rem;
   color: rgb(95, 71, 252);
   text-shadow: 0px 4px 8px rgb(10, 10, 10);
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: rgb(10, 10, 10);
 }
 .nav {
@@ -496,7 +496,7 @@ p {
 .projects_subtitle,
 .projects_links {
   text-align: left;
-  margin: 12px auto;
+  margin: 8px auto;
 }
 
 /* Footer */
@@ -722,10 +722,12 @@ p {
     max-width: 90%;
     height: auto;
     max-height: 90%;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .projects_links {
     font-size: 36px;
+    bottom: 24px;
+    margin: 0 auto;
   }
   .footer_logo {
     width: 125px;
@@ -816,10 +818,12 @@ p {
     max-width: 95%;
     height: auto;
     max-height: 95%;
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   .projects_links {
     font-size: 24px;
+    bottom: 24px;
+    margin: 0 auto;
   }
   .footer_logo {
     width: 100px;
@@ -834,7 +838,13 @@ p {
     font-size: 0.25rem;
   }
 }
-
+@media (max-width: 400px) {
+  .projects_links {
+    font-size: 24px;
+    bottom: 36px;
+    margin: 0 auto;
+  }
+}
 /* Keyframes for Animations*/
 
 @keyframes circle {
