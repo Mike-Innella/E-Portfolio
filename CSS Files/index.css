@@ -442,6 +442,7 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 500px;
   max-height: auto;
   transition: transform 350ms ease, filter 350ms ease;
   position: relative;
@@ -714,6 +715,9 @@ p {
     margin: 12px auto;
     padding: 3px;
   }
+  .projects_image {
+    max-height: 250px;
+  }
   .projects_description {
     text-align: left;
     margin: 0;
@@ -810,6 +814,9 @@ p {
     margin: 12px auto;
     padding: 6px;
   }
+  .projects_image {
+    max-height: 250px;
+  }
   .projects_description {
     text-align: left;
     margin: 0;
@@ -839,6 +846,14 @@ p {
   }
 }
 @media (max-width: 400px) {
+  .projects_wrapper {
+    width: 75%;
+    margin: 12px auto;
+    padding: 8px;
+  }
+  .projects_image {
+    height: 150px;
+  }
   .projects_links {
     font-size: 24px;
     bottom: 36px;
